@@ -6,7 +6,9 @@ import React from 'react';
 import { BaseProps, FocusableProps } from '../Base';
 import { StyledRoster } from './Styled';
 
-export interface RosterProps extends BaseProps, FocusableProps {}
+export interface RosterProps extends BaseProps, FocusableProps {
+  children?: React.ReactNode;
+}
 
 export const Roster: React.FC<RosterProps> = ({ children, ...rest }) => {
   return <StyledRoster {...rest}>{children}</StyledRoster>;

@@ -25,7 +25,7 @@ const ContentShareContext = createContext<ContentShareState | null>(null);
 const ContentShareControlContext =
   createContext<ContentShareControlContextType | null>(null);
 
-const ContentShareProvider: React.FC = ({ children }) => {
+const ContentShareProvider: React.FC<{ children?: React.ReactNode }> = ({ children }) => {
   const audioVideo = useAudioVideo();
   const [state, dispatch] = useReducer(reducer, initialState);
   const { paused, isLocalUserSharing, isLocalShareLoading } = state;

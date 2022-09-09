@@ -8,6 +8,7 @@ import { StyledUserActivityManager } from './Styled';
 
 export interface Props {
   isActive?: boolean | null;
+  children?: React.ReactNode;
 }
 
 export const UserActivityManager: FC<Props> = ({ children }) => {

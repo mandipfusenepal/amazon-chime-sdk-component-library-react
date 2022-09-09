@@ -24,6 +24,7 @@ interface Props {
     nextDevice: string,
     currentDevice: AudioInputDevice | undefined
   ) => Promise<AudioInputDevice>;
+  children?: React.ReactNode;
 }
 
 const Context = createContext<AudioInputContextType | null>(null);

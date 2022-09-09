@@ -10,6 +10,7 @@ import { StyledGrid } from './Styled';
 export interface GridProps extends BaseProps, SSGridProps {
   /** Whether or not the grid is responsive to different window sizes. */
   responsive?: boolean;
+  children?: React.ReactNode;
 }
 
 export const Grid: React.FC<GridProps> = ({

@@ -17,7 +17,7 @@ import { useLogger } from '../LoggerProvider';
 
 const Context = createContext<LocalAudioOutputContextType | null>(null);
 
-const LocalAudioOutputProvider: React.FC = ({ children }) => {
+const LocalAudioOutputProvider: React.FC<{ children?: React.ReactNode }> = ({ children }) => {
   const logger = useLogger();
   const audioVideo = useAudioVideo();
   const [isAudioOn, setIsAudioOn] = useState(true);

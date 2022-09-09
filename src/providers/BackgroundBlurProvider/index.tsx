@@ -33,6 +33,7 @@ interface Props extends BaseSdkProps {
   /** A set of options that can be supplied when creating a background blur video frame processor. For more information, refer to
    * [Amazon Chime SDK for JavaScript Background Filter Guide](https://github.com/aws/amazon-chime-sdk-js/blob/main/guides/15_Background_Filter_Video_Processor.md#adding-a-background-filter-to-your-application). */
   options?: BackgroundBlurOptions;
+  children?: React.ReactNode;
 }
 
 interface BackgroundBlurProviderState {

@@ -10,6 +10,7 @@ export interface CellProps extends SpaceProps, GridProps {
   tag?: string;
   css?: string;
   className?: string;
+  children?: React.ReactNode;
 }
 
 export const Cell: React.FC<CellProps> = ({ className, children, ...rest }) => (

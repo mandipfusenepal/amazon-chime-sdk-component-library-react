@@ -26,6 +26,7 @@ interface Props {
    * Check `meetingManager` prop documentation for more information.
    */
   meetingManager?: MeetingManager;
+  children?: React.ReactNode;
 }
 
 export const MeetingContext = createContext<MeetingManager | null>(null);

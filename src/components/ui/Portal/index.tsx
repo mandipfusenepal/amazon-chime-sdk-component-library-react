@@ -7,6 +7,7 @@ import { createPortal } from 'react-dom';
 interface PortalProps {
   /** Specifies the DOM node that the children of the portal will be render into. */
   rootId?: string;
+  children?: React.ReactNode;
 }
 
 export const Portal: FC<PortalProps> = ({ children, rootId }) => {

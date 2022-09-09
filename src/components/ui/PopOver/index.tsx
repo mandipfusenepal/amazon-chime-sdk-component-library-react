@@ -151,14 +151,16 @@ export const PopOver: FC<PopOverProps> = ({
             if (renderButton) {
               return (
                 <StyledPopOverToggle {...props}>
-                  {renderButton(isOpen)}
+                  {/* {renderButton(isOpen)} */}
                 </StyledPopOverToggle>
               );
             }
 
             if (renderButtonWrapper) {
               const { ref, ...rest } = props;
-              return <span ref={ref}>{renderButtonWrapper(isOpen, rest)}</span>;
+              return <span ref={ref}>
+                {/* {renderButtonWrapper(isOpen, rest)} */}
+              </span>;
             }
 
             return null;

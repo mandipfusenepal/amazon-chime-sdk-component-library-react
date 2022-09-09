@@ -26,6 +26,7 @@ interface Props {
 
   /** Optional features like Amazon Chime Echo Reduction capability is enabled at the meeting level when CreateMeeting is called. */
   createMeetingResponse?: JoinMeetingInfo;
+  children?: React.ReactNode;
 }
 
 interface VoiceFocusState {

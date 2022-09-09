@@ -25,6 +25,7 @@ export interface ModalProps
   rootId?: string;
   /** Optional prop to prevent the modal from closing. */
   dismissible?: boolean;
+  children?: React.ReactNode;
 }
 
 export const Modal: FC<ModalProps> = ({

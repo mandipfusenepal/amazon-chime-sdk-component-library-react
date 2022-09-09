@@ -13,6 +13,7 @@ export interface RosterGroupProps extends BaseProps, FocusableProps {
   title?: string;
   /** The number of attendees within one roster group. */
   badge?: number;
+  children?: React.ReactNode;
 }
 
 export const RosterGroup: React.FC<RosterGroupProps> = ({

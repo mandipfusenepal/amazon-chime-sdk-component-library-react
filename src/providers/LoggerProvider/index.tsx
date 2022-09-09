@@ -12,6 +12,7 @@ export const LoggerContext = React.createContext<Logger>(consoleLogger);
 
 interface Props {
   logger: Logger;
+  children?: React.ReactNode;
 }
 
 export const LoggerProvider: React.FC<Props> = ({ logger, children }) => {

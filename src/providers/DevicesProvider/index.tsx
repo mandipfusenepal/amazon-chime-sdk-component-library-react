@@ -13,6 +13,7 @@ interface Props {
     nextDevice: string,
     currentDevice: AudioInputDevice
   ) => Promise<AudioInputDevice>;
+  children?: React.ReactNode;
 }
 
 const DevicesProvider: React.FC<Props> = ({

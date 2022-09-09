@@ -52,6 +52,7 @@ export interface FlexProps extends BaseProps {
   layout?: Layout;
   /** Additional style of the flex */
   style?: {};
+  children?: React.ReactNode;
 }
 
 export const Flex: FC<FlexProps> = ({
